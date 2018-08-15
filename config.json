@@ -1,0 +1,18 @@
+{
+  "accepts": ["id"],
+  "classes":
+    ["Gene","Protein"],
+  "columnMapping": {
+    "Gene": {
+      "id": "primaryIdentifier"
+    },
+    "Protein": {
+      "id": "primaryAccession"
+    }
+  },
+  "files" : {
+    "css" : "dist/style.css",
+    "js" : "dist/bundle.js"
+  },
+  "toolName" : "Cytoscape Interaction Network"
+}

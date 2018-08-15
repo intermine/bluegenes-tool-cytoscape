@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cytoscape Interaction Network</title>
+
+    <!-- You can assume imjs is on the window.  -->
+    <script src="node_modules/imjs/dist/im.min.js"></script>
+
+    <link rel="stylesheet" href="dist/style.css">
+</head>
+
+<body>
+    <div class="bluegenesToolCytoscape" id='yourDiv' />
+    <script>
+        window.onload = function () {
+
+            //The element to attach the viewer to. Must be an existing DOM element
+            var elem = document.getElementById("yourDiv"),
+                //InterMine service, including URL and token.
+                imURL = {
+                    root: "http://humanmine.org/human"
+                    //could include token here too if we had one
+                },
+                //this is an example of data that could be passed to this tool be BlueGenes
+                //in reality (outside the demo) this would be dynamic and not hard-coded
+                // to an ID.
+                dataToInitialiseToolWith = {
+                    "class": "Protein",
+                    "format": "id",
+                    // right now this id corresponds to Human GATA1
+                    // this is a bit fragile since IDs change with every build
+                    // but we don't want to make the code more complicated than
+                    // needed for the demo.
+                    "value": 1276963
+                },
+                toolState = null; //to be confirmed how we use this.
+            // THIS LINE IS THE IMPORTANT BIT. YOU SHOULDN'T NEED TO EDIT IT
+            // the method signature should match the signature in src/index.js
+            $.ajax("config.json").then(function (config) {
+                bluegenesToolCytoscape.main(
+                    elem, imURL, dataToInitialiseToolWith, toolState, config);
+            });
+        }
+    </script>
+    <script src="dist/bundle.js"></script>
+
+</body>
+
+</html>

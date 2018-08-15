@@ -1,0 +1,22 @@
+{
+  "name": "Cytoscape Interaction Network",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bluegenes-intermine-tool"
+  ],
+  "author": "",
+  "license": "LGPL-3.0",
+  "dependencies": {
+    "cytoscape-network": "file:../cytoscape-intermine"
+  },
+  "devDependencies": {
+    "html-loader": "^0.5.5",
+    "imjs": "^3.16",
+    "less": "^3.8.1",
+    "less-plugin-clean-css": "^1.5.1"
+  }
+}
