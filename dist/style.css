@@ -1,0 +1,436 @@
+.bluegenesToolCytoscape .cymine .controls .interactionFilter,
+.bluegenesToolCytoscape .cymine .status,
+.bluegenesToolCytoscape .cymine dt.intro,
+.bluegenesToolCytoscape .cymine dt:after {
+  text-align: center;
+}
+.bluegenesToolCytoscape .loader,
+.bluegenesToolCytoscape .loader:after,
+.bluegenesToolCytoscape .loader:before {
+  background: #333;
+  -webkit-animation: load1 1s infinite ease-in-out;
+  animation: load1 1s infinite ease-in-out;
+  width: 1em;
+  height: 4em;
+}
+.bluegenesToolCytoscape .loader:after,
+.bluegenesToolCytoscape .loader:before {
+  position: absolute;
+  top: 0;
+  content: '';
+}
+.bluegenesToolCytoscape .loader:before {
+  left: -1.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+.bluegenesToolCytoscape .loader {
+  text-indent: -9999em;
+  margin: 88px auto;
+  position: relative;
+  font-size: 11px;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+.bluegenesToolCytoscape .loader:after {
+  left: 1.5em;
+}
+@-webkit-keyframes load1 {
+  0%,
+  100%,
+  80% {
+    box-shadow: 0 0 #333;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em #333;
+    height: 5em;
+  }
+}
+@keyframes load1 {
+  0%,
+  100%,
+  80% {
+    box-shadow: 0 0 #333;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em #333;
+    height: 5em;
+  }
+}
+.bluegenesToolCytoscape .cf:after,
+.bluegenesToolCytoscape .cf:before {
+  content: " ";
+  display: table;
+}
+.bluegenesToolCytoscape .cf:after {
+  clear: both;
+}
+.bluegenesToolCytoscape .secondaryControl {
+  min-height: 2.2em;
+  line-height: 2.2em;
+  flex-grow: 1;
+  padding: 0 1em;
+  box-sizing: border-box;
+  color: #666;
+  margin: 0 0.5em;
+}
+.bluegenesToolCytoscape .secondaryControl:hover {
+  color: #333;
+  background-color: #eee;
+}
+.bluegenesToolCytoscape .secondaryControl:last-of-type {
+  margin-right: 0;
+}
+.bluegenesToolCytoscape .secondaryControl:first-of-type {
+  margin-left: 0;
+}
+.bluegenesToolCytoscape body {
+  font-family: arial, sans-serif;
+}
+.bluegenesToolCytoscape .cymine {
+  display: flex;
+  background-color: #f0f0f0;
+  flex-wrap: wrap;
+  border: 1px solid #eee;
+}
+.bluegenesToolCytoscape .cymine .graph,
+.bluegenesToolCytoscape .cymine .module,
+.bluegenesToolCytoscape .cymine .nodeDetails {
+  background-color: #fff;
+  margin: 1em;
+  flex-grow: 1;
+  box-sizing: border-box;
+  min-width: 350px;
+  min-height: 350px;
+}
+.bluegenesToolCytoscape .cymine .module {
+  border: 1px solid #eee;
+  border-radius: 4px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bluegenesToolCytoscape .cymine .graph,
+.bluegenesToolCytoscape .cymine .nodeDetails {
+  border: 1px solid #eee;
+  border-radius: 4px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9em;
+}
+.bluegenesToolCytoscape .cymine .tableView {
+  width: 100%;
+}
+.bluegenesToolCytoscape .cymine .tableView.disabled {
+  display: none;
+}
+.bluegenesToolCytoscape .cymine .nodeTitle {
+  margin: 0.2em;
+}
+.bluegenesToolCytoscape .cymine .cy {
+  width: 350px;
+  height: 350px;
+  margin: auto;
+}
+.bluegenesToolCytoscape .cymine dd,
+.bluegenesToolCytoscape .cymine dt {
+  float: left;
+  margin-left: .5em;
+  margin-top: .1em;
+  text-transform: capitalize;
+}
+.bluegenesToolCytoscape .cymine dd.details,
+.bluegenesToolCytoscape .cymine dt.details {
+  width: 97%;
+  margin-left: 0;
+}
+.bluegenesToolCytoscape .cymine dl {
+  margin: 0;
+  clear: left;
+  width: 100%;
+  float: left;
+}
+.bluegenesToolCytoscape .cymine dl.intro {
+  border: 0;
+}
+.bluegenesToolCytoscape .cymine .details > dl > dt,
+.bluegenesToolCytoscape .cymine .details > dl > dt + dd {
+  width: 100%;
+  border-left: solid 1px #c8c8c8;
+  border-right: solid 1px #c8c8c8;
+  box-sizing: border-box;
+}
+.bluegenesToolCytoscape .cymine dl:after,
+.bluegenesToolCytoscape .cymine dl:before {
+  content: " ";
+  display: table;
+}
+.bluegenesToolCytoscape .cymine dl:after {
+  clear: both;
+}
+.bluegenesToolCytoscape .cymine dt {
+  font-weight: 700;
+  float: left;
+  clear: left;
+}
+.bluegenesToolCytoscape .cymine dt:after {
+  content: ": ";
+}
+.bluegenesToolCytoscape .cymine .controls button:after,
+.bluegenesToolCytoscape .cymine .controls button:before,
+.bluegenesToolCytoscape .cymine dt.intro:after {
+  content: "";
+}
+.bluegenesToolCytoscape .cymine dt.intro {
+  text-transform: none;
+  box-sizing: border-box;
+  font-weight: 400;
+  color: #666;
+  line-height: 350px;
+  width: 100%;
+}
+.bluegenesToolCytoscape .cymine .dataSets {
+  padding-left: 0.4em;
+}
+.bluegenesToolCytoscape .cymine .details > dl > dt {
+  background-color: #eee;
+  padding: .3em;
+  border-top: solid 1px #c8c8c8;
+  float: left;
+  margin-bottom: 0;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.bluegenesToolCytoscape .cymine .details > dl > dt + dd {
+  margin-top: 0;
+  clear: both;
+  border-bottom: solid 1px #c8c8c8;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  padding-bottom: 0.2em;
+}
+.bluegenesToolCytoscape .cymine .details > dl > dt + dd.child > dl .child {
+  border-left: solid 3px #ddd;
+}
+.bluegenesToolCytoscape .cymine .roles,
+.bluegenesToolCytoscape .cymine dd.child {
+  clear: left;
+}
+.bluegenesToolCytoscape .cymine .status.no-results {
+  border: 1px solid #eee;
+  min-width: 350px;
+  min-height: 350px;
+  margin: 1em;
+  border-radius: 4px;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: #fff;
+  line-height: 350px;
+}
+.bluegenesToolCytoscape .cymine .controls {
+  padding: 0;
+  margin: auto;
+}
+.bluegenesToolCytoscape .cymine .controls button {
+  background-color: #eee;
+  border: 0;
+  border-bottom: solid 3px #fff;
+  padding: .5em 1.5em;
+  color: #000;
+  margin: 0;
+  transition: border 1s ease;
+  position: relative;
+}
+.bluegenesToolCytoscape .cymine .controls button:before {
+  width: 15px;
+  height: 15px;
+  margin-right: .5em;
+  display: block;
+  float: left;
+  opacity: .4;
+  border-radius: 30px;
+  border: 2px solid #eee;
+}
+.bluegenesToolCytoscape .cymine .controls button.selected:before {
+  opacity: 1;
+}
+.bluegenesToolCytoscape .cymine .controls button.genetic:before {
+  border-color: #225f95;
+}
+.bluegenesToolCytoscape .cymine .controls button.default:before {
+  border-color: #77304B;
+}
+.bluegenesToolCytoscape .cymine .controls button.physical:before {
+  border-color: #c00;
+}
+.bluegenesToolCytoscape .cymine .controls button:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 3px;
+  background-color: #ec971f;
+  transition: width 0.2s;
+}
+.bluegenesToolCytoscape .cymine .controls button:hover:after {
+  width: 100%;
+}
+.bluegenesToolCytoscape .cymine .controls button.selected {
+  transition: border 1s ease;
+  border-bottom: solid 3px #2c79be;
+}
+.bluegenesToolCytoscape .cymine .controls button:first-child {
+  -webkit-border-top-left-radius: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  -moz-border-radius-topleft: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-right: solid 1px #d5d5d5;
+  margin: 0;
+}
+.bluegenesToolCytoscape .cymine .controls button:last-child {
+  margin: 0;
+  border-left: solid 1px #d5d5d5;
+  -webkit-border-top-right-radius: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  -moz-border-radius-bottomright: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    width: 0;
+  }
+  to {
+    opacity: 1;
+    width: 90%;
+  }
+}
+.bluegenesToolCytoscape .cymine .secondaryControls {
+  border: 1px solid #eee;
+  margin: .5em 0 0;
+  display: flex;
+  padding: 0;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.bluegenesToolCytoscape .cymine .export,
+.bluegenesToolCytoscape .cymine .reset,
+.bluegenesToolCytoscape .cymine .showTable {
+  min-height: 2.2em;
+  line-height: 2.2em;
+  padding: 0 1em;
+  box-sizing: border-box;
+}
+.bluegenesToolCytoscape .cymine .reset,
+.bluegenesToolCytoscape .cymine .showTable {
+  flex-grow: 1;
+  color: #666;
+  margin: 0 0.5em;
+}
+.bluegenesToolCytoscape .cymine .reset:hover,
+.bluegenesToolCytoscape .cymine .showTable:hover {
+  color: #333;
+  background-color: #eee;
+}
+.bluegenesToolCytoscape .cymine .reset:last-of-type,
+.bluegenesToolCytoscape .cymine .showTable:last-of-type {
+  margin-right: 0;
+}
+.bluegenesToolCytoscape .cymine .reset:first-of-type,
+.bluegenesToolCytoscape .cymine .showTable:first-of-type {
+  margin-left: 0;
+}
+.bluegenesToolCytoscape .cymine .showTable {
+  text-align: center;
+  display: none;
+}
+.bluegenesToolCytoscape .cymine .showTable.enabled {
+  transition: flex ease-in-out 2s;
+  display: block;
+}
+.bluegenesToolCytoscape .cymine .export .exportValues button:after,
+.bluegenesToolCytoscape .cymine .export .exportValues button:before,
+.bluegenesToolCytoscape .cymine .export .exportValues button:hover:after {
+  display: none;
+}
+.bluegenesToolCytoscape .cymine .export {
+  flex-grow: 1;
+  color: #666;
+  margin: 0 .5em;
+  text-align: right;
+  transition: all 2s hover .5s;
+  align-self: flex-end;
+}
+.bluegenesToolCytoscape .cymine .export:hover {
+  color: #333;
+  background-color: #eee;
+}
+.bluegenesToolCytoscape .cymine .export:last-of-type {
+  margin-right: 0;
+}
+.bluegenesToolCytoscape .cymine .export:first-of-type {
+  margin-left: 0;
+}
+.bluegenesToolCytoscape .cymine .export .exportValues {
+  display: none;
+  background-color: #fff;
+  border-radius: 2px;
+}
+.bluegenesToolCytoscape .cymine .export .exportValues button {
+  background-color: #2c79be;
+  color: #eee;
+  border: 0;
+  border-radius: 4px;
+}
+.bluegenesToolCytoscape .cymine .export .exportValues button:hover {
+  border: 0;
+  background-color: #1e5180;
+}
+.bluegenesToolCytoscape .cymine .export.active {
+  flex-grow: 2;
+  transition: 1s;
+}
+.bluegenesToolCytoscape .cymine .export.active:hover {
+  color: #666;
+  background-color: transparent;
+}
+.bluegenesToolCytoscape .cymine .export.active .exportValues {
+  display: inline;
+  animation: fadeIn 2s;
+}
+.bluegenesToolCytoscape .cymine.compact.cymine {
+  border: 0;
+  padding: 0;
+}
+.bluegenesToolCytoscape .cymine.compact.cymine .cy,
+.bluegenesToolCytoscape .cymine.compact.cymine .status.no-results {
+  line-height: 1.5em;
+  height: 1.5em;
+  min-height: 1.5em;
+}
+.bluegenesToolCytoscape .cymine.compact.cymine .graph {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  height: 1.5em;
+  min-height: 1.5em;
+}
+.bluegenesToolCytoscape .cymine.compact.cymine .controls,
+.bluegenesToolCytoscape .cymine.compact.cymine .nodeDetails,
+.bluegenesToolCytoscape .cymine.compact.cymine .nodeInfo {
+  display: none;
+}

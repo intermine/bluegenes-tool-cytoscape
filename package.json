@@ -11,12 +11,16 @@
   "author": "",
   "license": "LGPL-3.0",
   "dependencies": {
-    "cytoscape-network": "file:../cytoscape-intermine"
+    "cytoscape": "^3.2.15",
+    "cytoscape-network": "git+https://github.com/yochannah/cytoscape-intermine.git",
+    "es6-promise": "^4.2.4",
+    "underscore": "^1.9.1"
   },
   "devDependencies": {
     "html-loader": "^0.5.5",
     "imjs": "^3.16",
     "less": "^3.8.1",
-    "less-plugin-clean-css": "^1.5.1"
+    "less-plugin-clean-css": "^1.5.1",
+    "raw-loader": "^0.5.1"
   }
 }

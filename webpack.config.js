@@ -3,6 +3,7 @@ const webpack = require('webpack'); //to access built-in plugins
 
 module.exports = {
   mode: "production",
+  //slim.js loads without imtables, which we can assume is on the window
   entry: './src/index.js',
   output: {
     filename: 'bundle.js',
@@ -17,16 +18,8 @@ module.exports = {
     rules: [{
       test: /\.html$/,
       use: [{
-        loader: 'underscore-template-loader',
-        options: {
-          minimize: true
-        },
-        query: {
-          interpolate: '\\{\\[(.+?)\\]\\}',
-          evaluate: '\\{%([\\s\\S]+?)%\\}',
-          escape: '\\{\\{(.+?)\\}\\}'
-        }
+        loader: 'raw-loader'
       }],
     }]
   }
-};
+}; 
