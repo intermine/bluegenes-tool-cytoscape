@@ -1,9 +1,9 @@
 #  Cytoscape Interaction Network
 
-FIXME: fill out a description of your tool here! :)
+Thin wrapper around https://github.com/yochannah/cytoscape-intermine to allow cytoscape network viewer to display on bluegenes via the tool api.
 
 ## Licence
-
+LGPL 3 - see [LICENCE](LICENCE)
 
 ### To set up locally for development
 
