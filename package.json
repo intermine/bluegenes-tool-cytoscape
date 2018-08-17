@@ -1,19 +1,29 @@
 {
-  "name": "Cytoscape Interaction Network",
+  "name": "@intermine/bluegenes-cytoscape-interaction-network-viewer",
   "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:intermine/bluegenesToolCytoscape.git"
+  },
+  "description": "",
+  "homepage": "http://www.intermine.org",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/.bin/webpack",
+    "dev": "./node_modules/.bin/webpack --watch",
+    "less": "lessc src/style.less dist/style.css --clean-css"
   },
   "keywords": [
     "bluegenes-intermine-tool"
   ],
-  "author": "",
+  "author": "Yo Yehudi",
   "license": "LGPL-3.0",
   "dependencies": {
+    "@intermine/cytoscape-intermine": "^1.1.2",
     "cytoscape": "^3.2.15",
-    "cytoscape-network": "git+https://github.com/yochannah/cytoscape-intermine.git",
     "es6-promise": "^4.2.4",
+    "serve": "^9.6.0",
     "underscore": "^1.9.1"
   },
   "devDependencies": {
@@ -21,6 +31,8 @@
     "imjs": "^3.16",
     "less": "^3.8.1",
     "less-plugin-clean-css": "^1.5.1",
-    "raw-loader": "^0.5.1"
+    "raw-loader": "^0.5.1",
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0"
   }
 }
