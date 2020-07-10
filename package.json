@@ -1,9 +1,9 @@
 {
   "name": "@intermine/bluegenes-cytoscape-interaction-network-viewer",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "repository": {
     "type": "git",
-    "url": "git@github.com:intermine/bluegenesToolCytoscape.git"
+    "url": "git@github.com:intermine/bluegenes-tool-cytoscape.git"
   },
   "description": "Visualize gene and protein interaction networks using [cytoscape.js](http://js.cytoscape.org/).",
   "homepage": "http://www.intermine.org",

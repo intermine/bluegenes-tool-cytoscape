@@ -1,7 +1,6 @@
 {
   "accepts": ["id"],
-  "classes":
-    ["Gene","Protein"],
+  "classes": ["Gene","Protein"],
   "columnMapping": {
     "Gene": {
       "id": "primaryIdentifier"
@@ -14,5 +13,9 @@
     "css" : "dist/style.css",
     "js" : "dist/bundle.js"
   },
-  "toolName" : "Cytoscape Interaction Network"
+  "toolName" : {
+    "human": "Cytoscape Interaction Network",
+    "cljs": "bluegenesToolCytoscape"
+  },
+  "version": 2
 }
