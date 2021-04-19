@@ -23,7 +23,7 @@
     "@intermine/cytoscape-intermine": "^1.1.4",
     "cytoscape": "^3.18.2",
     "es6-promise": "^4.2.8",
-    "serve": "^9.6.0",
+    "serve": "^10.1.2",
     "underscore": "^1.13.1"
   },
   "devDependencies": {
